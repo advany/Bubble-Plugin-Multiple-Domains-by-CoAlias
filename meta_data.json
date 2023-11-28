@@ -1,0 +1,14 @@
+{
+    "categories": {
+        "0": "data (things)",
+        "1": "internationalization",
+        "2": "technical"
+    },
+    "description": "Plugin that allow you to add custom, domain(s) to your bubble app.\n\nThere are also advanced features like adding routes, files, redirects, changing meta data and improving security.",
+    "image": "//s3.amazonaws.com/appforest_uf/f1672761735638x544153088288921150/CoAlias%20-%20Favicon.png",
+    "license": "open_source",
+    "link": "https://CoAlias.com/",
+    "name": "Multiple Domains by CoAlias",
+    "plugin_instructions": "",
+    "sa_node_version": 18
+}

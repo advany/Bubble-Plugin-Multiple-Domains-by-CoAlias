@@ -1,0 +1,16 @@
+{
+    "category": "plugins",
+    "display": "CoAlias - Change url (pushState)",
+    "fields": {
+        "AHS": {
+            "caption": "destination",
+            "default_val": "?search=all",
+            "doc": "This will change the page url without reloading. Will not update pages thing.",
+            "editor": "DynamicValue",
+            "name": "destination",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "type": "client_side"
+}

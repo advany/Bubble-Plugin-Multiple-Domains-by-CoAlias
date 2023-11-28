@@ -1,0 +1,15 @@
+{
+    "category": "plugins",
+    "display": "CoAlias - Open an external website",
+    "fields": {
+        "AAu": {
+            "caption": "Destination",
+            "default_val": "https://google.com/",
+            "editor": "DynamicValue",
+            "name": "destination",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "type": "client_side"
+}

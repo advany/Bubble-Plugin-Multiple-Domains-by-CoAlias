@@ -1,0 +1,347 @@
+{
+    "auth": "private_key_header",
+    "calls": {
+        "AHi": {
+            "get_headers": true,
+            "initialized": true,
+            "method": "get",
+            "name": "Domains - List",
+            "publish_as": "data",
+            "rank": 0,
+            "ret_value": "api.1672761665688x759154902569320400.plugin_api.AHi",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AHi\":{\"caption\":\"Domains - LIST\",\"fields\":{\"_p_body.domains\":{\"ret_value\":\"list.text\",\"caption\":\"body domains\",\"sample_value\":\"coaliastestdomain.com\",\"path\":[\"body\",\"domains\"]},\"_p_body.error\":{\"ret_value\":\"text\",\"caption\":\"body error\",\"sample_value\":null,\"path\":[\"body\",\"error\"]},\"_p_body.message\":{\"ret_value\":\"text\",\"caption\":\"body message\",\"sample_value\":\"Domains listed\",\"path\":[\"body\",\"message\"]},\"_p_body.internal\":{\"ret_value\":\"number\",\"caption\":\"body internal\",\"sample_value\":352265835,\"path\":[\"body\",\"internal\"]},\"_p_error.status_code\":{\"ret_value\":\"number\",\"caption\":\"error status_code\",\"sample_value\":200,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_value\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"OK\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_value\":\"text\",\"caption\":\"error body\",\"sample_value\":\"\\\"{\\\\\\\"domains\\\\\\\":[\\\\\\\"coaliastestdomain.com\\\\\\\",\\\\\\\"www.coaliastestdomain.com\\\\\\\",\\\\\\\"lkdjlsjkdfldfkjdfs.customdomain.site\\\\\\\"],\\\\\\\"error\\\\\\\":null,\\\\\\\"message\\\\\\\":\\\\\\\"Domains listed\\\\\\\",\\\\\\\"internal\\\\\\\":352265835}\\\"\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_value\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]},\"_p_headers.date\":{\"ret_value\":\"text\",\"caption\":\"headers date\",\"sample_value\":\"Thu, 23 Nov 2023 12:42:15 GMT\",\"path\":[\"headers\",\"date\"]},\"_p_headers.content-type\":{\"ret_value\":\"text\",\"caption\":\"headers content-type\",\"sample_value\":\"application/json; charset=UTF-8\",\"path\":[\"headers\",\"content-type\"]},\"_p_headers.transfer-encoding\":{\"ret_value\":\"text\",\"caption\":\"headers transfer-encoding\",\"sample_value\":\"chunked\",\"path\":[\"headers\",\"transfer-encoding\"]},\"_p_headers.connection\":{\"ret_value\":\"text\",\"caption\":\"headers connection\",\"sample_value\":\"keep-alive\",\"path\":[\"headers\",\"connection\"]},\"_p_headers.cache-control\":{\"ret_value\":\"text\",\"caption\":\"headers cache-control\",\"sample_value\":\"no-store, no-cache, must-revalidate, proxy-revalidate\",\"path\":[\"headers\",\"cache-control\"]},\"_p_headers.expires\":{\"ret_value\":\"text\",\"caption\":\"headers expires\",\"sample_value\":\"0\",\"path\":[\"headers\",\"expires\"]},\"_p_headers.pragma\":{\"ret_value\":\"text\",\"caption\":\"headers pragma\",\"sample_value\":\"no-cache\",\"path\":[\"headers\",\"pragma\"]},\"_p_headers.report-to\":{\"ret_value\":\"text\",\"caption\":\"headers report-to\",\"sample_value\":\"{\\\"endpoints\\\":[{\\\"url\\\":\\\"https:\\\\/\\\\/a.nel.cloudflare.com\\\\/report\\\\/v3?s=jtzT96WmoHpSgZ%2FDp1SekjplR%2BbwhPLXwZ3Z%2FQPbKw3boyWacai5jonj2VmDSLXd%2FPvvJh5%2FQQPN3%2Fsye5Gusq91SPwzpYsJhAggC%2BGoow0HiOx9d8X%2B65AvbD6MTecyoA%3D%3D\\\"}],\\\"group\\\":\\\"cf-nel\\\",\\\"max_age\\\":604800}\",\"path\":[\"headers\",\"report-to\"]},\"_p_headers.nel\":{\"ret_value\":\"text\",\"caption\":\"headers nel\",\"sample_value\":\"{\\\"success_fraction\\\":0,\\\"report_to\\\":\\\"cf-nel\\\",\\\"max_age\\\":604800}\",\"path\":[\"headers\",\"nel\"]},\"_p_headers.vary\":{\"ret_value\":\"text\",\"caption\":\"headers vary\",\"sample_value\":\"Accept-Encoding\",\"path\":[\"headers\",\"vary\"]},\"_p_headers.server\":{\"ret_value\":\"text\",\"caption\":\"headers server\",\"sample_value\":\"cloudflare\",\"path\":[\"headers\",\"server\"]},\"_p_headers.cf-ray\":{\"ret_value\":\"text\",\"caption\":\"headers cf-ray\",\"sample_value\":\"82a97db4dfb23094-SEA\",\"path\":[\"headers\",\"cf-ray\"]},\"_p_headers.content-encoding\":{\"ret_value\":\"text\",\"caption\":\"headers content-encoding\",\"sample_value\":\"gzip\",\"path\":[\"headers\",\"content-encoding\"]}}}}",
+            "url": "https://api.coalias.com/domains?modified=[modified]",
+            "url_params": {
+                "AHx": {
+                    "key": "modified",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "wrap_error": true
+        },
+        "AHj": {
+            "get_headers": true,
+            "initialized": true,
+            "method": "get",
+            "name": "Domain - Get",
+            "publish_as": "data",
+            "rank": 1,
+            "ret_value": "api.1672761665688x759154902569320400.plugin_api.AHj",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AHj\":{\"caption\":\"Domain - GET\",\"fields\":{\"_p_body.domain.name\":{\"ret_value\":\"text\",\"caption\":\"body domain name\",\"sample_value\":\"coaliastestdomain.com\",\"path\":[\"body\",\"domain\",\"name\"]},\"_p_body.domain.misconfigured\":{\"ret_value\":\"boolean\",\"caption\":\"body domain misconfigured\",\"sample_value\":true,\"path\":[\"body\",\"domain\",\"misconfigured\"]},\"_p_body.domain.dns_ip\":{\"ret_value\":\"text\",\"caption\":\"body domain dns_ip\",\"sample_value\":\"76.76.21.21\",\"path\":[\"body\",\"domain\",\"dns_ip\"]},\"_p_body.domain.dns_configured\":{\"ret_value\":\"boolean\",\"caption\":\"body domain dns_configured\",\"sample_value\":false,\"path\":[\"body\",\"domain\",\"dns_configured\"]},\"_p_body.domain.verified\":{\"ret_value\":\"boolean\",\"caption\":\"body domain verified\",\"sample_value\":true,\"path\":[\"body\",\"domain\",\"verified\"]},\"_p_body.domain.verification_record_type\":{\"ret_value\":\"text\",\"caption\":\"body domain verification_record_type\",\"sample_value\":\"\",\"path\":[\"body\",\"domain\",\"verification_record_type\"]},\"_p_body.domain.verification_record_name\":{\"ret_value\":\"text\",\"caption\":\"body domain verification_record_name\",\"sample_value\":\"\",\"path\":[\"body\",\"domain\",\"verification_record_name\"]},\"_p_body.domain.verification_record_value\":{\"ret_value\":\"text\",\"caption\":\"body domain verification_record_value\",\"sample_value\":\"\",\"path\":[\"body\",\"domain\",\"verification_record_value\"]},\"_p_body.domain.certificate\":{\"ret_value\":\"boolean\",\"caption\":\"body domain certificate\",\"sample_value\":false,\"path\":[\"body\",\"domain\",\"certificate\"]},\"_p_body.domain.certificate_expires\":{\"ret_value\":\"text\",\"caption\":\"body domain certificate_expires\",\"sample_value\":null,\"path\":[\"body\",\"domain\",\"certificate_expires\"]},\"_p_body.domain.certificate_auto_renew\":{\"ret_value\":\"text\",\"caption\":\"body domain certificate_auto_renew\",\"sample_value\":null,\"path\":[\"body\",\"domain\",\"certificate_auto_renew\"]},\"_p_body.config.target\":{\"ret_value\":\"text\",\"caption\":\"body config target\",\"sample_value\":\"https://coalias.com/\",\"path\":[\"body\",\"config\",\"target\"]},\"_p_body.config.type\":{\"ret_value\":\"text\",\"caption\":\"body config type\",\"sample_value\":\"bubble\",\"path\":[\"body\",\"config\",\"type\"]},\"_p_body.config.account\":{\"ret_value\":\"text\",\"caption\":\"body config account\",\"sample_value\":\"nocodemayo-bubble-g58p8ekirine18ziiqnq\",\"path\":[\"body\",\"config\",\"account\"]},\"_p_body.error\":{\"ret_value\":\"text\",\"caption\":\"body error\",\"sample_value\":null,\"path\":[\"body\",\"error\"]},\"_p_body.message\":{\"ret_value\":\"text\",\"caption\":\"body message\",\"sample_value\":\"Domain found in account\",\"path\":[\"body\",\"message\"]},\"_p_body.internal\":{\"ret_value\":\"number\",\"caption\":\"body internal\",\"sample_value\":423464534,\"path\":[\"body\",\"internal\"]},\"_p_error.status_code\":{\"ret_value\":\"number\",\"caption\":\"error status_code\",\"sample_value\":200,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_value\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"OK\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_value\":\"text\",\"caption\":\"error body\",\"sample_value\":\"\\\"{\\\\\\\"domain\\\\\\\":{\\\\\\\"name\\\\\\\":\\\\\\\"coaliastestdomain.com\\\\\\\",\\\\\\\"misconfigured\\\\\\\":true,\\\\\\\"dns_ip\\\\\\\":\\\\\\\"76.76.21.21\\\\\\\",\\\\\\\"dns_configured\\\\\\\":false,\\\\\\\"verified\\\\\\\":true,\\\\\\\"verification_record_type\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"verification_record_name\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"verification_record_value\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"certificate\\\\\\\":false,\\\\\\\"certificate_expires\\\\\\\":null,\\\\\\\"certificate_auto_renew\\\\\\\":null},\\\\\\\"config\\\\\\\":{\\\\\\\"target\\\\\\\":\\\\\\\"https://coalias.com/\\\\\\\",\\\\\\\"type\\\\\\\":\\\\\\\"bubble\\\\\\\",\\\\\\\"account\\\\\\\":\\\\\\\"nocodemayo-bubble-g58p8ekirine18ziiqnq\\\\\\\"},\\\\\\\"error\\\\\\\":null,\\\\\\\"message\\\\\\\":\\\\\\\"Domain found in account\\\\\\\",\\\\\\\"internal\\\\\\\":423464534}\\\"\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_value\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]},\"_p_headers.date\":{\"ret_value\":\"text\",\"caption\":\"headers date\",\"sample_value\":\"Thu, 23 Nov 2023 12:42:20 GMT\",\"path\":[\"headers\",\"date\"]},\"_p_headers.content-type\":{\"ret_value\":\"text\",\"caption\":\"headers content-type\",\"sample_value\":\"application/json; charset=UTF-8\",\"path\":[\"headers\",\"content-type\"]},\"_p_headers.transfer-encoding\":{\"ret_value\":\"text\",\"caption\":\"headers transfer-encoding\",\"sample_value\":\"chunked\",\"path\":[\"headers\",\"transfer-encoding\"]},\"_p_headers.connection\":{\"ret_value\":\"text\",\"caption\":\"headers connection\",\"sample_value\":\"keep-alive\",\"path\":[\"headers\",\"connection\"]},\"_p_headers.cache-control\":{\"ret_value\":\"text\",\"caption\":\"headers cache-control\",\"sample_value\":\"no-store, no-cache, must-revalidate, proxy-revalidate\",\"path\":[\"headers\",\"cache-control\"]},\"_p_headers.expires\":{\"ret_value\":\"text\",\"caption\":\"headers expires\",\"sample_value\":\"0\",\"path\":[\"headers\",\"expires\"]},\"_p_headers.pragma\":{\"ret_value\":\"text\",\"caption\":\"headers pragma\",\"sample_value\":\"no-cache\",\"path\":[\"headers\",\"pragma\"]},\"_p_headers.report-to\":{\"ret_value\":\"text\",\"caption\":\"headers report-to\",\"sample_value\":\"{\\\"endpoints\\\":[{\\\"url\\\":\\\"https:\\\\/\\\\/a.nel.cloudflare.com\\\\/report\\\\/v3?s=KVsOsXTNX%2B%2FZooQg8Ts9lwyCfWh9g1U%2FORZVasVbb1QtL7Z4G9WP0VdxXcYp5bo3Ayv221i1Q5J9Rhgm2LyuZI1es602OjP2h%2Bd3MLgKMHhze2V7ZgmPfobAzz03rsm7%2BQ%3D%3D\\\"}],\\\"group\\\":\\\"cf-nel\\\",\\\"max_age\\\":604800}\",\"path\":[\"headers\",\"report-to\"]},\"_p_headers.nel\":{\"ret_value\":\"text\",\"caption\":\"headers nel\",\"sample_value\":\"{\\\"success_fraction\\\":0,\\\"report_to\\\":\\\"cf-nel\\\",\\\"max_age\\\":604800}\",\"path\":[\"headers\",\"nel\"]},\"_p_headers.vary\":{\"ret_value\":\"text\",\"caption\":\"headers vary\",\"sample_value\":\"Accept-Encoding\",\"path\":[\"headers\",\"vary\"]},\"_p_headers.server\":{\"ret_value\":\"text\",\"caption\":\"headers server\",\"sample_value\":\"cloudflare\",\"path\":[\"headers\",\"server\"]},\"_p_headers.cf-ray\":{\"ret_value\":\"text\",\"caption\":\"headers cf-ray\",\"sample_value\":\"82a97dc7dafb6c8a-SEA\",\"path\":[\"headers\",\"cf-ray\"]},\"_p_headers.content-encoding\":{\"ret_value\":\"text\",\"caption\":\"headers content-encoding\",\"sample_value\":\"gzip\",\"path\":[\"headers\",\"content-encoding\"]}}}}",
+            "url": "https://api.coalias.com/domains/[name]?modified=[modified]",
+            "url_params": {
+                "AHl": {
+                    "key": "name",
+                    "private": true,
+                    "value": "coaliastestdomain.com"
+                },
+                "AHw": {
+                    "key": "modified",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "wrap_error": true
+        },
+        "AHm": {
+            "body": "{\n    \"name\": \"<name>\"\n}",
+            "body_params": {
+                "AHp": {
+                    "key": "name",
+                    "private": true,
+                    "value": "coaliastesdfdsfstdomain.com"
+                }
+            },
+            "get_headers": true,
+            "initialized": true,
+            "method": "post",
+            "name": "Domain - Add",
+            "publish_as": "action",
+            "rank": 2,
+            "ret_value": "api.1672761665688x759154902569320400.plugin_api.AHm",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AHm\":{\"caption\":\"Domain - ADD\",\"fields\":{\"_p_body.domain.name\":{\"ret_value\":\"text\",\"caption\":\"body domain name\",\"sample_value\":\"coaliastesdfdsfstdomain.com\",\"path\":[\"body\",\"domain\",\"name\"]},\"_p_body.domain.misconfigured\":{\"ret_value\":\"boolean\",\"caption\":\"body domain misconfigured\",\"sample_value\":true,\"path\":[\"body\",\"domain\",\"misconfigured\"]},\"_p_body.domain.dns_ip\":{\"ret_value\":\"text\",\"caption\":\"body domain dns_ip\",\"sample_value\":\"76.76.21.21\",\"path\":[\"body\",\"domain\",\"dns_ip\"]},\"_p_body.domain.dns_configured\":{\"ret_value\":\"boolean\",\"caption\":\"body domain dns_configured\",\"sample_value\":false,\"path\":[\"body\",\"domain\",\"dns_configured\"]},\"_p_body.domain.verified\":{\"ret_value\":\"boolean\",\"caption\":\"body domain verified\",\"sample_value\":true,\"path\":[\"body\",\"domain\",\"verified\"]},\"_p_body.domain.verification_record_type\":{\"ret_value\":\"text\",\"caption\":\"body domain verification_record_type\",\"sample_value\":\"\",\"path\":[\"body\",\"domain\",\"verification_record_type\"]},\"_p_body.domain.verification_record_name\":{\"ret_value\":\"text\",\"caption\":\"body domain verification_record_name\",\"sample_value\":\"\",\"path\":[\"body\",\"domain\",\"verification_record_name\"]},\"_p_body.domain.verification_record_value\":{\"ret_value\":\"text\",\"caption\":\"body domain verification_record_value\",\"sample_value\":\"\",\"path\":[\"body\",\"domain\",\"verification_record_value\"]},\"_p_body.domain.certificate\":{\"ret_value\":\"boolean\",\"caption\":\"body domain certificate\",\"sample_value\":false,\"path\":[\"body\",\"domain\",\"certificate\"]},\"_p_body.domain.certificate_expires\":{\"ret_value\":\"date_unix\",\"caption\":\"body domain certificate_expires\",\"sample_value\":null,\"path\":[\"body\",\"domain\",\"certificate_expires\"]},\"_p_body.domain.certificate_auto_renew\":{\"ret_value\":\"text\",\"caption\":\"body domain certificate_auto_renew\",\"sample_value\":null,\"path\":[\"body\",\"domain\",\"certificate_auto_renew\"]},\"_p_body.config.target\":{\"ret_value\":\"text\",\"caption\":\"body config target\",\"sample_value\":\"https://nocodemayo.bubbleapps.io/\",\"path\":[\"body\",\"config\",\"target\"]},\"_p_body.config.type\":{\"ret_value\":\"text\",\"caption\":\"body config type\",\"sample_value\":\"bubble\",\"path\":[\"body\",\"config\",\"type\"]},\"_p_body.config.account\":{\"ret_value\":\"text\",\"caption\":\"body config account\",\"sample_value\":\"nocodemayo-bubble-g58p8ekirine18ziiqnq\",\"path\":[\"body\",\"config\",\"account\"]},\"_p_body.error\":{\"ret_value\":\"text\",\"caption\":\"body error\",\"sample_value\":null,\"path\":[\"body\",\"error\"]},\"_p_body.message\":{\"ret_value\":\"text\",\"caption\":\"body message\",\"sample_value\":\"Domain added\",\"path\":[\"body\",\"message\"]},\"_p_body.internal\":{\"ret_value\":\"number\",\"caption\":\"body internal\",\"sample_value\":98134973,\"path\":[\"body\",\"internal\"]},\"_p_error.status_code\":{\"ret_value\":\"number\",\"caption\":\"error status_code\",\"sample_value\":200,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_value\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"OK\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_value\":\"text\",\"caption\":\"error body\",\"sample_value\":\"\\\"{\\\\\\\"domain\\\\\\\":{\\\\\\\"name\\\\\\\":\\\\\\\"coaliastesdfdsfstdomain.com\\\\\\\",\\\\\\\"misconfigured\\\\\\\":true,\\\\\\\"dns_ip\\\\\\\":\\\\\\\"76.76.21.21\\\\\\\",\\\\\\\"dns_configured\\\\\\\":false,\\\\\\\"verified\\\\\\\":true,\\\\\\\"verification_record_type\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"verification_record_name\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"verification_record_value\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"certificate\\\\\\\":false,\\\\\\\"certificate_expires\\\\\\\":null,\\\\\\\"certificate_auto_renew\\\\\\\":null},\\\\\\\"config\\\\\\\":{\\\\\\\"target\\\\\\\":\\\\\\\"https://nocodemayo.bubbleapps.io/\\\\\\\",\\\\\\\"type\\\\\\\":\\\\\\\"bubble\\\\\\\",\\\\\\\"account\\\\\\\":\\\\\\\"nocodemayo-bubble-g58p8ekirine18ziiqnq\\\\\\\"},\\\\\\\"error\\\\\\\":null,\\\\\\\"message\\\\\\\":\\\\\\\"Domain added\\\\\\\",\\\\\\\"internal\\\\\\\":98134973}\\\"\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_value\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]},\"_p_headers.date\":{\"ret_value\":\"text\",\"caption\":\"headers date\",\"sample_value\":\"Thu, 23 Nov 2023 12:50:44 GMT\",\"path\":[\"headers\",\"date\"]},\"_p_headers.content-type\":{\"ret_value\":\"text\",\"caption\":\"headers content-type\",\"sample_value\":\"application/json; charset=UTF-8\",\"path\":[\"headers\",\"content-type\"]},\"_p_headers.transfer-encoding\":{\"ret_value\":\"text\",\"caption\":\"headers transfer-encoding\",\"sample_value\":\"chunked\",\"path\":[\"headers\",\"transfer-encoding\"]},\"_p_headers.connection\":{\"ret_value\":\"text\",\"caption\":\"headers connection\",\"sample_value\":\"keep-alive\",\"path\":[\"headers\",\"connection\"]},\"_p_headers.cache-control\":{\"ret_value\":\"text\",\"caption\":\"headers cache-control\",\"sample_value\":\"no-store, no-cache, must-revalidate, proxy-revalidate\",\"path\":[\"headers\",\"cache-control\"]},\"_p_headers.expires\":{\"ret_value\":\"text\",\"caption\":\"headers expires\",\"sample_value\":\"0\",\"path\":[\"headers\",\"expires\"]},\"_p_headers.pragma\":{\"ret_value\":\"text\",\"caption\":\"headers pragma\",\"sample_value\":\"no-cache\",\"path\":[\"headers\",\"pragma\"]},\"_p_headers.report-to\":{\"ret_value\":\"text\",\"caption\":\"headers report-to\",\"sample_value\":\"{\\\"endpoints\\\":[{\\\"url\\\":\\\"https:\\\\/\\\\/a.nel.cloudflare.com\\\\/report\\\\/v3?s=YXH84PqJyc%2FM21vUrAwal0nuY5TjXMUKWz3YdtnoAiWdV4kvgavhh436y6u25CeHw1Vck1UH8VBVFCm2OBUbDNKM1yRHK6Nmzq4YJavldiOjcp0JTLjwpRlizfyUH4FGrw%3D%3D\\\"}],\\\"group\\\":\\\"cf-nel\\\",\\\"max_age\\\":604800}\",\"path\":[\"headers\",\"report-to\"]},\"_p_headers.nel\":{\"ret_value\":\"text\",\"caption\":\"headers nel\",\"sample_value\":\"{\\\"success_fraction\\\":0,\\\"report_to\\\":\\\"cf-nel\\\",\\\"max_age\\\":604800}\",\"path\":[\"headers\",\"nel\"]},\"_p_headers.vary\":{\"ret_value\":\"text\",\"caption\":\"headers vary\",\"sample_value\":\"Accept-Encoding\",\"path\":[\"headers\",\"vary\"]},\"_p_headers.server\":{\"ret_value\":\"text\",\"caption\":\"headers server\",\"sample_value\":\"cloudflare\",\"path\":[\"headers\",\"server\"]},\"_p_headers.cf-ray\":{\"ret_value\":\"text\",\"caption\":\"headers cf-ray\",\"sample_value\":\"82a98a0d7b71c4cd-SEA\",\"path\":[\"headers\",\"cf-ray\"]},\"_p_headers.content-encoding\":{\"ret_value\":\"text\",\"caption\":\"headers content-encoding\",\"sample_value\":\"gzip\",\"path\":[\"headers\",\"content-encoding\"]}}}}",
+            "url": "https://api.coalias.com/domains?modified=[modified]",
+            "url_params": {
+                "AHv": {
+                    "key": "modified",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "wrap_error": true
+        },
+        "AHn": {
+            "body": "{\n    \"target\": \"<target>\"\n}",
+            "body_params": {
+                "AHs": {
+                    "allow_blank": true,
+                    "key": "target",
+                    "private": true,
+                    "value": "https://coalias.com/"
+                }
+            },
+            "get_headers": true,
+            "initialized": true,
+            "method": "patch",
+            "name": "Domain - Update",
+            "publish_as": "action",
+            "rank": 3,
+            "ret_value": "api.1672761665688x759154902569320400.plugin_api.AHn",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AHn\":{\"caption\":\"Domain - UPDATE\",\"fields\":{\"_p_body.domain.name\":{\"ret_value\":\"text\",\"caption\":\"body domain name\",\"sample_value\":\"coaliastestdomain.com\",\"path\":[\"body\",\"domain\",\"name\"]},\"_p_body.domain.misconfigured\":{\"ret_value\":\"boolean\",\"caption\":\"body domain misconfigured\",\"sample_value\":true,\"path\":[\"body\",\"domain\",\"misconfigured\"]},\"_p_body.domain.dns_ip\":{\"ret_value\":\"text\",\"caption\":\"body domain dns_ip\",\"sample_value\":\"76.76.21.21\",\"path\":[\"body\",\"domain\",\"dns_ip\"]},\"_p_body.domain.dns_configured\":{\"ret_value\":\"boolean\",\"caption\":\"body domain dns_configured\",\"sample_value\":false,\"path\":[\"body\",\"domain\",\"dns_configured\"]},\"_p_body.domain.verified\":{\"ret_value\":\"boolean\",\"caption\":\"body domain verified\",\"sample_value\":true,\"path\":[\"body\",\"domain\",\"verified\"]},\"_p_body.domain.verification_record_type\":{\"ret_value\":\"text\",\"caption\":\"body domain verification_record_type\",\"sample_value\":\"\",\"path\":[\"body\",\"domain\",\"verification_record_type\"]},\"_p_body.domain.verification_record_name\":{\"ret_value\":\"text\",\"caption\":\"body domain verification_record_name\",\"sample_value\":\"\",\"path\":[\"body\",\"domain\",\"verification_record_name\"]},\"_p_body.domain.verification_record_value\":{\"ret_value\":\"text\",\"caption\":\"body domain verification_record_value\",\"sample_value\":\"\",\"path\":[\"body\",\"domain\",\"verification_record_value\"]},\"_p_body.domain.certificate\":{\"ret_value\":\"boolean\",\"caption\":\"body domain certificate\",\"sample_value\":false,\"path\":[\"body\",\"domain\",\"certificate\"]},\"_p_body.domain.certificate_expires\":{\"ret_value\":\"text\",\"caption\":\"body domain certificate_expires\",\"sample_value\":null,\"path\":[\"body\",\"domain\",\"certificate_expires\"]},\"_p_body.domain.certificate_auto_renew\":{\"ret_value\":\"text\",\"caption\":\"body domain certificate_auto_renew\",\"sample_value\":null,\"path\":[\"body\",\"domain\",\"certificate_auto_renew\"]},\"_p_body.config.target\":{\"ret_value\":\"text\",\"caption\":\"body config target\",\"sample_value\":\"https://coalias.com/\",\"path\":[\"body\",\"config\",\"target\"]},\"_p_body.config.type\":{\"ret_value\":\"text\",\"caption\":\"body config type\",\"sample_value\":\"bubble\",\"path\":[\"body\",\"config\",\"type\"]},\"_p_body.config.account\":{\"ret_value\":\"text\",\"caption\":\"body config account\",\"sample_value\":\"nocodemayo-bubble-g58p8ekirine18ziiqnq\",\"path\":[\"body\",\"config\",\"account\"]},\"_p_body.error\":{\"ret_value\":\"text\",\"caption\":\"body error\",\"sample_value\":null,\"path\":[\"body\",\"error\"]},\"_p_body.message\":{\"ret_value\":\"text\",\"caption\":\"body message\",\"sample_value\":\"Domain updated\",\"path\":[\"body\",\"message\"]},\"_p_body.internal\":{\"ret_value\":\"number\",\"caption\":\"body internal\",\"sample_value\":423464534,\"path\":[\"body\",\"internal\"]},\"_p_error.status_code\":{\"ret_value\":\"number\",\"caption\":\"error status_code\",\"sample_value\":200,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_value\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"OK\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_value\":\"text\",\"caption\":\"error body\",\"sample_value\":\"\\\"{\\\\\\\"domain\\\\\\\":{\\\\\\\"name\\\\\\\":\\\\\\\"coaliastestdomain.com\\\\\\\",\\\\\\\"misconfigured\\\\\\\":true,\\\\\\\"dns_ip\\\\\\\":\\\\\\\"76.76.21.21\\\\\\\",\\\\\\\"dns_configured\\\\\\\":false,\\\\\\\"verified\\\\\\\":true,\\\\\\\"verification_record_type\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"verification_record_name\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"verification_record_value\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"certificate\\\\\\\":false,\\\\\\\"certificate_expires\\\\\\\":null,\\\\\\\"certificate_auto_renew\\\\\\\":null},\\\\\\\"config\\\\\\\":{\\\\\\\"target\\\\\\\":\\\\\\\"https://coalias.com/\\\\\\\",\\\\\\\"type\\\\\\\":\\\\\\\"bubble\\\\\\\",\\\\\\\"account\\\\\\\":\\\\\\\"nocodemayo-bubble-g58p8ekirine18ziiqnq\\\\\\\"},\\\\\\\"error\\\\\\\":null,\\\\\\\"message\\\\\\\":\\\\\\\"Domain updated\\\\\\\",\\\\\\\"internal\\\\\\\":423464534}\\\"\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_value\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]},\"_p_headers.date\":{\"ret_value\":\"text\",\"caption\":\"headers date\",\"sample_value\":\"Thu, 23 Nov 2023 12:42:33 GMT\",\"path\":[\"headers\",\"date\"]},\"_p_headers.content-type\":{\"ret_value\":\"text\",\"caption\":\"headers content-type\",\"sample_value\":\"application/json; charset=UTF-8\",\"path\":[\"headers\",\"content-type\"]},\"_p_headers.transfer-encoding\":{\"ret_value\":\"text\",\"caption\":\"headers transfer-encoding\",\"sample_value\":\"chunked\",\"path\":[\"headers\",\"transfer-encoding\"]},\"_p_headers.connection\":{\"ret_value\":\"text\",\"caption\":\"headers connection\",\"sample_value\":\"keep-alive\",\"path\":[\"headers\",\"connection\"]},\"_p_headers.cache-control\":{\"ret_value\":\"text\",\"caption\":\"headers cache-control\",\"sample_value\":\"no-store, no-cache, must-revalidate, proxy-revalidate\",\"path\":[\"headers\",\"cache-control\"]},\"_p_headers.expires\":{\"ret_value\":\"text\",\"caption\":\"headers expires\",\"sample_value\":\"0\",\"path\":[\"headers\",\"expires\"]},\"_p_headers.pragma\":{\"ret_value\":\"text\",\"caption\":\"headers pragma\",\"sample_value\":\"no-cache\",\"path\":[\"headers\",\"pragma\"]},\"_p_headers.report-to\":{\"ret_value\":\"text\",\"caption\":\"headers report-to\",\"sample_value\":\"{\\\"endpoints\\\":[{\\\"url\\\":\\\"https:\\\\/\\\\/a.nel.cloudflare.com\\\\/report\\\\/v3?s=ktpjGDChsf8d3HPLzW5w2BsMdh1B%2Balf9XPVH9PR5UoQsZfz6E2J7%2BSX7lNOvREYljv9MNfZuhBGSw7Pdh7dWxQrKiI7tuchCIXjBRlPznNycpFwWLUUmGGA%2FTJX7xp1cw%3D%3D\\\"}],\\\"group\\\":\\\"cf-nel\\\",\\\"max_age\\\":604800}\",\"path\":[\"headers\",\"report-to\"]},\"_p_headers.nel\":{\"ret_value\":\"text\",\"caption\":\"headers nel\",\"sample_value\":\"{\\\"success_fraction\\\":0,\\\"report_to\\\":\\\"cf-nel\\\",\\\"max_age\\\":604800}\",\"path\":[\"headers\",\"nel\"]},\"_p_headers.vary\":{\"ret_value\":\"text\",\"caption\":\"headers vary\",\"sample_value\":\"Accept-Encoding\",\"path\":[\"headers\",\"vary\"]},\"_p_headers.server\":{\"ret_value\":\"text\",\"caption\":\"headers server\",\"sample_value\":\"cloudflare\",\"path\":[\"headers\",\"server\"]},\"_p_headers.cf-ray\":{\"ret_value\":\"text\",\"caption\":\"headers cf-ray\",\"sample_value\":\"82a97e1969dcc4d7-SEA\",\"path\":[\"headers\",\"cf-ray\"]},\"_p_headers.content-encoding\":{\"ret_value\":\"text\",\"caption\":\"headers content-encoding\",\"sample_value\":\"gzip\",\"path\":[\"headers\",\"content-encoding\"]}}}}",
+            "url": "https://api.coalias.com/domains/[name]?modified=[modified]",
+            "url_params": {
+                "AHo": {
+                    "key": "name",
+                    "private": true,
+                    "value": "coaliastestdomain.com"
+                },
+                "AHu": {
+                    "key": "modified",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "wrap_error": true
+        },
+        "AHq": {
+            "get_headers": true,
+            "initialized": true,
+            "method": "delete_method",
+            "name": "Domain - Delete",
+            "publish_as": "action",
+            "rank": 4,
+            "ret_value": "api.1672761665688x759154902569320400.plugin_api.AHq",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AHq\":{\"caption\":\"Domain - DELETE\",\"fields\":{\"_p_body.error\":{\"ret_value\":\"text\",\"caption\":\"body error\",\"sample_value\":null,\"path\":[\"body\",\"error\"]},\"_p_body.message\":{\"ret_value\":\"text\",\"caption\":\"body message\",\"sample_value\":\"Domain deleted from account\",\"path\":[\"body\",\"message\"]},\"_p_body.internal\":{\"ret_value\":\"number\",\"caption\":\"body internal\",\"sample_value\":423464534,\"path\":[\"body\",\"internal\"]},\"_p_error.status_code\":{\"ret_value\":\"number\",\"caption\":\"error status_code\",\"sample_value\":200,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_value\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"OK\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_value\":\"text\",\"caption\":\"error body\",\"sample_value\":\"\\\"{\\\\\\\"error\\\\\\\":null,\\\\\\\"message\\\\\\\":\\\\\\\"Domain deleted from account\\\\\\\",\\\\\\\"internal\\\\\\\":423464534}\\\"\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_value\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]},\"_p_headers.date\":{\"ret_value\":\"text\",\"caption\":\"headers date\",\"sample_value\":\"Thu, 23 Nov 2023 12:42:40 GMT\",\"path\":[\"headers\",\"date\"]},\"_p_headers.content-type\":{\"ret_value\":\"text\",\"caption\":\"headers content-type\",\"sample_value\":\"application/json; charset=UTF-8\",\"path\":[\"headers\",\"content-type\"]},\"_p_headers.transfer-encoding\":{\"ret_value\":\"text\",\"caption\":\"headers transfer-encoding\",\"sample_value\":\"chunked\",\"path\":[\"headers\",\"transfer-encoding\"]},\"_p_headers.connection\":{\"ret_value\":\"text\",\"caption\":\"headers connection\",\"sample_value\":\"keep-alive\",\"path\":[\"headers\",\"connection\"]},\"_p_headers.cache-control\":{\"ret_value\":\"text\",\"caption\":\"headers cache-control\",\"sample_value\":\"no-store, no-cache, must-revalidate, proxy-revalidate\",\"path\":[\"headers\",\"cache-control\"]},\"_p_headers.expires\":{\"ret_value\":\"text\",\"caption\":\"headers expires\",\"sample_value\":\"0\",\"path\":[\"headers\",\"expires\"]},\"_p_headers.pragma\":{\"ret_value\":\"text\",\"caption\":\"headers pragma\",\"sample_value\":\"no-cache\",\"path\":[\"headers\",\"pragma\"]},\"_p_headers.report-to\":{\"ret_value\":\"text\",\"caption\":\"headers report-to\",\"sample_value\":\"{\\\"endpoints\\\":[{\\\"url\\\":\\\"https:\\\\/\\\\/a.nel.cloudflare.com\\\\/report\\\\/v3?s=wo9qfQaUUFqakZ30luFLLH4O44V0LNElslZ9bZcOfUs49UcNneJhYr7OejJaaEu9s9FuANpIjqbkqWm2X45mJIf%2FOkfGTVSpiUv0%2BQ3qlVbY9VkMAhebdNPUyrUjowTvSg%3D%3D\\\"}],\\\"group\\\":\\\"cf-nel\\\",\\\"max_age\\\":604800}\",\"path\":[\"headers\",\"report-to\"]},\"_p_headers.nel\":{\"ret_value\":\"text\",\"caption\":\"headers nel\",\"sample_value\":\"{\\\"success_fraction\\\":0,\\\"report_to\\\":\\\"cf-nel\\\",\\\"max_age\\\":604800}\",\"path\":[\"headers\",\"nel\"]},\"_p_headers.vary\":{\"ret_value\":\"text\",\"caption\":\"headers vary\",\"sample_value\":\"Accept-Encoding\",\"path\":[\"headers\",\"vary\"]},\"_p_headers.server\":{\"ret_value\":\"text\",\"caption\":\"headers server\",\"sample_value\":\"cloudflare\",\"path\":[\"headers\",\"server\"]},\"_p_headers.cf-ray\":{\"ret_value\":\"text\",\"caption\":\"headers cf-ray\",\"sample_value\":\"82a97e46ea14c5ac-SEA\",\"path\":[\"headers\",\"cf-ray\"]},\"_p_headers.content-encoding\":{\"ret_value\":\"text\",\"caption\":\"headers content-encoding\",\"sample_value\":\"gzip\",\"path\":[\"headers\",\"content-encoding\"]}}}}",
+            "url": "https://api.coalias.com/domains/[name]?modified=[modified]",
+            "url_params": {
+                "AHr": {
+                    "key": "name",
+                    "private": true,
+                    "value": "coaliastestdomain.com"
+                },
+                "AHt": {
+                    "allow_blank": true,
+                    "key": "modified",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "wrap_error": true
+        },
+        "AIA": {
+            "get_headers": true,
+            "initialized": true,
+            "method": "get",
+            "name": "Domain - Check",
+            "publish_as": "action",
+            "rank": 5,
+            "ret_value": "api.1672761665688x759154902569320400.plugin_api.AIA",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AIA\":{\"caption\":\"Domain - Check\",\"fields\":{\"_p_body.domain.name\":{\"ret_value\":\"text\",\"caption\":\"body domain name\",\"sample_value\":\"coaliastestdomain.com\",\"path\":[\"body\",\"domain\",\"name\"]},\"_p_body.domain.misconfigured\":{\"ret_value\":\"boolean\",\"caption\":\"body domain misconfigured\",\"sample_value\":true,\"path\":[\"body\",\"domain\",\"misconfigured\"]},\"_p_body.domain.dns_ip\":{\"ret_value\":\"text\",\"caption\":\"body domain dns_ip\",\"sample_value\":\"76.76.21.21\",\"path\":[\"body\",\"domain\",\"dns_ip\"]},\"_p_body.domain.dns_configured\":{\"ret_value\":\"boolean\",\"caption\":\"body domain dns_configured\",\"sample_value\":false,\"path\":[\"body\",\"domain\",\"dns_configured\"]},\"_p_body.domain.verified\":{\"ret_value\":\"boolean\",\"caption\":\"body domain verified\",\"sample_value\":true,\"path\":[\"body\",\"domain\",\"verified\"]},\"_p_body.domain.verification_record_type\":{\"ret_value\":\"text\",\"caption\":\"body domain verification_record_type\",\"sample_value\":\"\",\"path\":[\"body\",\"domain\",\"verification_record_type\"]},\"_p_body.domain.verification_record_name\":{\"ret_value\":\"text\",\"caption\":\"body domain verification_record_name\",\"sample_value\":\"\",\"path\":[\"body\",\"domain\",\"verification_record_name\"]},\"_p_body.domain.verification_record_value\":{\"ret_value\":\"text\",\"caption\":\"body domain verification_record_value\",\"sample_value\":\"\",\"path\":[\"body\",\"domain\",\"verification_record_value\"]},\"_p_body.domain.certificate\":{\"ret_value\":\"boolean\",\"caption\":\"body domain certificate\",\"sample_value\":false,\"path\":[\"body\",\"domain\",\"certificate\"]},\"_p_body.domain.certificate_expires\":{\"ret_value\":\"text\",\"caption\":\"body domain certificate_expires\",\"sample_value\":null,\"path\":[\"body\",\"domain\",\"certificate_expires\"]},\"_p_body.domain.certificate_auto_renew\":{\"ret_value\":\"text\",\"caption\":\"body domain certificate_auto_renew\",\"sample_value\":null,\"path\":[\"body\",\"domain\",\"certificate_auto_renew\"]},\"_p_body.config.target\":{\"ret_value\":\"text\",\"caption\":\"body config target\",\"sample_value\":\"https://nocodemayo.bubbleapps.io/\",\"path\":[\"body\",\"config\",\"target\"]},\"_p_body.config.type\":{\"ret_value\":\"text\",\"caption\":\"body config type\",\"sample_value\":\"bubble\",\"path\":[\"body\",\"config\",\"type\"]},\"_p_body.config.account\":{\"ret_value\":\"text\",\"caption\":\"body config account\",\"sample_value\":\"nocodemayo-bubble-g58p8ekirine18ziiqnq\",\"path\":[\"body\",\"config\",\"account\"]},\"_p_body.error\":{\"ret_value\":\"text\",\"caption\":\"body error\",\"sample_value\":null,\"path\":[\"body\",\"error\"]},\"_p_body.message\":{\"ret_value\":\"text\",\"caption\":\"body message\",\"sample_value\":\"Domain found in account\",\"path\":[\"body\",\"message\"]},\"_p_body.internal\":{\"ret_value\":\"number\",\"caption\":\"body internal\",\"sample_value\":423464534,\"path\":[\"body\",\"internal\"]},\"_p_error.status_code\":{\"ret_value\":\"number\",\"caption\":\"error status_code\",\"sample_value\":200,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_value\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"OK\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_value\":\"text\",\"caption\":\"error body\",\"sample_value\":\"\\\"{\\\\\\\"domain\\\\\\\":{\\\\\\\"name\\\\\\\":\\\\\\\"coaliastestdomain.com\\\\\\\",\\\\\\\"misconfigured\\\\\\\":true,\\\\\\\"dns_ip\\\\\\\":\\\\\\\"76.76.21.21\\\\\\\",\\\\\\\"dns_configured\\\\\\\":false,\\\\\\\"verified\\\\\\\":true,\\\\\\\"verification_record_type\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"verification_record_name\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"verification_record_value\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"certificate\\\\\\\":false,\\\\\\\"certificate_expires\\\\\\\":null,\\\\\\\"certificate_auto_renew\\\\\\\":null},\\\\\\\"config\\\\\\\":{\\\\\\\"target\\\\\\\":\\\\\\\"https://nocodemayo.bubbleapps.io/\\\\\\\",\\\\\\\"type\\\\\\\":\\\\\\\"bubble\\\\\\\",\\\\\\\"account\\\\\\\":\\\\\\\"nocodemayo-bubble-g58p8ekirine18ziiqnq\\\\\\\"},\\\\\\\"error\\\\\\\":null,\\\\\\\"message\\\\\\\":\\\\\\\"Domain found in account\\\\\\\",\\\\\\\"internal\\\\\\\":423464534}\\\"\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_value\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]},\"_p_headers.date\":{\"ret_value\":\"text\",\"caption\":\"headers date\",\"sample_value\":\"Thu, 23 Nov 2023 12:42:52 GMT\",\"path\":[\"headers\",\"date\"]},\"_p_headers.content-type\":{\"ret_value\":\"text\",\"caption\":\"headers content-type\",\"sample_value\":\"application/json; charset=UTF-8\",\"path\":[\"headers\",\"content-type\"]},\"_p_headers.transfer-encoding\":{\"ret_value\":\"text\",\"caption\":\"headers transfer-encoding\",\"sample_value\":\"chunked\",\"path\":[\"headers\",\"transfer-encoding\"]},\"_p_headers.connection\":{\"ret_value\":\"text\",\"caption\":\"headers connection\",\"sample_value\":\"keep-alive\",\"path\":[\"headers\",\"connection\"]},\"_p_headers.cache-control\":{\"ret_value\":\"text\",\"caption\":\"headers cache-control\",\"sample_value\":\"no-store, no-cache, must-revalidate, proxy-revalidate\",\"path\":[\"headers\",\"cache-control\"]},\"_p_headers.expires\":{\"ret_value\":\"text\",\"caption\":\"headers expires\",\"sample_value\":\"0\",\"path\":[\"headers\",\"expires\"]},\"_p_headers.pragma\":{\"ret_value\":\"text\",\"caption\":\"headers pragma\",\"sample_value\":\"no-cache\",\"path\":[\"headers\",\"pragma\"]},\"_p_headers.report-to\":{\"ret_value\":\"text\",\"caption\":\"headers report-to\",\"sample_value\":\"{\\\"endpoints\\\":[{\\\"url\\\":\\\"https:\\\\/\\\\/a.nel.cloudflare.com\\\\/report\\\\/v3?s=elbWn1geBsFTtd1P%2F79wYM7s5i9WwgV%2BBEBlo0BaL%2FH7RNK9DhocwcPD2nu%2Fvhp2lMl5H1iNsxck%2BcxMyjD0DbQngPmz9YfSdG5uEfNGqjRLjH1WhJHD7V2EXGS2GNyxNQ%3D%3D\\\"}],\\\"group\\\":\\\"cf-nel\\\",\\\"max_age\\\":604800}\",\"path\":[\"headers\",\"report-to\"]},\"_p_headers.nel\":{\"ret_value\":\"text\",\"caption\":\"headers nel\",\"sample_value\":\"{\\\"success_fraction\\\":0,\\\"report_to\\\":\\\"cf-nel\\\",\\\"max_age\\\":604800}\",\"path\":[\"headers\",\"nel\"]},\"_p_headers.vary\":{\"ret_value\":\"text\",\"caption\":\"headers vary\",\"sample_value\":\"Accept-Encoding\",\"path\":[\"headers\",\"vary\"]},\"_p_headers.server\":{\"ret_value\":\"text\",\"caption\":\"headers server\",\"sample_value\":\"cloudflare\",\"path\":[\"headers\",\"server\"]},\"_p_headers.cf-ray\":{\"ret_value\":\"text\",\"caption\":\"headers cf-ray\",\"sample_value\":\"82a97e969c2dc57a-SEA\",\"path\":[\"headers\",\"cf-ray\"]},\"_p_headers.content-encoding\":{\"ret_value\":\"text\",\"caption\":\"headers content-encoding\",\"sample_value\":\"gzip\",\"path\":[\"headers\",\"content-encoding\"]}}}}",
+            "url": "https://api.coalias.com/domains/[name]?modified=[modified]",
+            "url_params": {
+                "AIB": {
+                    "key": "name",
+                    "private": true,
+                    "value": "coaliastestdomain.com"
+                },
+                "AIC": {
+                    "key": "modified",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "wrap_error": true
+        },
+        "AIE": {
+            "initialized": true,
+            "method": "get",
+            "name": "Route - GET",
+            "publish_as": "data",
+            "rank": 6,
+            "ret_value": "api.1672761665688x759154902569320400.plugin_api.AIE",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AIE\":{\"caption\":\"Route - GET\",\"fields\":{\"_p_routes.source\":{\"ret_value\":\"text\",\"caption\":\"routes source\",\"sample_value\":\"/*\",\"path\":[\"routes\",\"source\"]},\"_p_routes.destination\":{\"ret_value\":\"text\",\"caption\":\"routes destination\",\"sample_value\":\"/hoi\",\"path\":[\"routes\",\"destination\"]},\"_p_routes.type\":{\"ret_value\":\"text\",\"caption\":\"routes type\",\"sample_value\":\"client\",\"path\":[\"routes\",\"type\"]},\"_p_routes.kind\":{\"ret_value\":\"text\",\"caption\":\"routes kind\",\"sample_value\":\"internal\",\"path\":[\"routes\",\"kind\"]},\"_p_error\":{\"ret_value\":\"text\",\"caption\":\"error\",\"sample_value\":null,\"path\":[\"error\"]},\"_p_message\":{\"ret_value\":\"text\",\"caption\":\"message\",\"sample_value\":\"Route fetched\",\"path\":[\"message\"]},\"_p_internal\":{\"ret_value\":\"number\",\"caption\":\"internal\",\"sample_value\":439082492,\"path\":[\"internal\"]}}}}",
+            "url": "https://api.coalias.com/domains/[name]/routes?source=[source]&modified=[modified]",
+            "url_params": {
+                "AIF": {
+                    "key": "name",
+                    "private": true,
+                    "value": "sometestdomain.com"
+                },
+                "AIG": {
+                    "key": "source",
+                    "private": true,
+                    "value": "/*"
+                },
+                "AIH": {
+                    "key": "modified",
+                    "private": true,
+                    "value": ""
+                }
+            }
+        },
+        "AII": {
+            "initialized": true,
+            "method": "get",
+            "name": "Route - List",
+            "publish_as": "data",
+            "rank": 7,
+            "ret_value": "api.1672761665688x759154902569320400.plugin_api.AII",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AII\":{\"caption\":\"Route - List\",\"fields\":{\"_p_list\":{\"ret_value\":\"list.api.1672761665688x759154902569320400.plugin_api.AII.list\",\"caption\":\"list\",\"path\":[\"list\"]},\"_p_error\":{\"ret_value\":\"text\",\"caption\":\"error\",\"sample_value\":null,\"path\":[\"error\"]},\"_p_message\":{\"ret_value\":\"text\",\"caption\":\"message\",\"sample_value\":\"Routes listed\",\"path\":[\"message\"]},\"_p_internal\":{\"ret_value\":\"number\",\"caption\":\"internal\",\"sample_value\":423464534,\"path\":[\"internal\"]}}},\"plugin_api.AII.list\":{\"caption\":\"Route - List list\",\"fields\":{\"_p_source\":{\"ret_value\":\"text\",\"caption\":\"source\",\"sample_value\":\"/*\",\"path\":[\"source\"]},\"_p_destination\":{\"ret_value\":\"text\",\"caption\":\"destination\",\"sample_value\":\"/hoi\",\"path\":[\"destination\"]},\"_p_type\":{\"ret_value\":\"text\",\"caption\":\"type\",\"sample_value\":\"client\",\"path\":[\"type\"]},\"_p_kind\":{\"ret_value\":\"text\",\"caption\":\"kind\",\"sample_value\":\"internal\",\"path\":[\"kind\"]}}}}",
+            "url": "https://api.coalias.com/domains/[name]/routes?modified=[modified]",
+            "url_params": {
+                "AIJ": {
+                    "key": "name",
+                    "private": true,
+                    "value": "sometestdomain.com"
+                },
+                "AIK": {
+                    "key": "modified",
+                    "private": true,
+                    "value": ""
+                }
+            }
+        },
+        "AIL": {
+            "body": "{\n\t\"source\": \"<source>\",\n    \"destination\": \"<destination>\",\n    \"type\": \"<type>\"\n}",
+            "body_params": {
+                "AIQ": {
+                    "key": "source",
+                    "private": true,
+                    "value": "/source"
+                },
+                "AIR": {
+                    "key": "destination",
+                    "private": true,
+                    "value": "/destination"
+                },
+                "AIS": {
+                    "key": "type",
+                    "private": true,
+                    "value": "auto"
+                }
+            },
+            "initialized": true,
+            "method": "post",
+            "name": "Route - Create",
+            "publish_as": "action",
+            "rank": 8,
+            "ret_value": "api.1672761665688x759154902569320400.plugin_api.AIL",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AIL\":{\"caption\":\"API Call\",\"fields\":{\"_p_source\":{\"ret_value\":\"text\",\"caption\":\"source\",\"sample_value\":\"/source\",\"path\":[\"source\"]},\"_p_routes.source\":{\"ret_value\":\"text\",\"caption\":\"routes source\",\"sample_value\":\"/source\",\"path\":[\"routes\",\"source\"]},\"_p_routes.destination\":{\"ret_value\":\"text\",\"caption\":\"routes destination\",\"sample_value\":\"/destination\",\"path\":[\"routes\",\"destination\"]},\"_p_routes.type\":{\"ret_value\":\"text\",\"caption\":\"routes type\",\"sample_value\":\"auto\",\"path\":[\"routes\",\"type\"]},\"_p_routes.kind\":{\"ret_value\":\"text\",\"caption\":\"routes kind\",\"sample_value\":\"internal\",\"path\":[\"routes\",\"kind\"]},\"_p_error\":{\"ret_value\":\"text\",\"caption\":\"error\",\"sample_value\":null,\"path\":[\"error\"]},\"_p_message\":{\"ret_value\":\"text\",\"caption\":\"message\",\"sample_value\":\"Route added\",\"path\":[\"message\"]},\"_p_internal\":{\"ret_value\":\"number\",\"caption\":\"internal\",\"sample_value\":439082492,\"path\":[\"internal\"]}}}}",
+            "url": "https://api.coalias.com/domains/[domain]/routes",
+            "url_params": {
+                "AIP": {
+                    "doc": "Domain name",
+                    "key": "domain",
+                    "private": true,
+                    "value": "sometestdomain.com"
+                }
+            }
+        },
+        "AIT": {
+            "body": "{\n\t\"source\": \"<source>\",\n    \"destination\": \"<destination>\",\n    \"type\": \"<type>\"\n}",
+            "body_params": {
+                "AIV": {
+                    "key": "source",
+                    "private": true,
+                    "value": "/source"
+                },
+                "AIW": {
+                    "key": "destination",
+                    "private": true,
+                    "value": "/destination"
+                },
+                "AIX": {
+                    "key": "type",
+                    "private": true,
+                    "value": "auto"
+                }
+            },
+            "initialized": true,
+            "method": "patch",
+            "name": "Route - Update",
+            "publish_as": "action",
+            "rank": 9,
+            "ret_value": "api.1672761665688x759154902569320400.plugin_api.AIT",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AIT\":{\"caption\":\"Route - Update\",\"fields\":{\"_p_source\":{\"ret_value\":\"text\",\"caption\":\"source\",\"sample_value\":\"/source\",\"path\":[\"source\"]},\"_p_routes.source\":{\"ret_value\":\"text\",\"caption\":\"routes source\",\"sample_value\":\"/source\",\"path\":[\"routes\",\"source\"]},\"_p_routes.destination\":{\"ret_value\":\"text\",\"caption\":\"routes destination\",\"sample_value\":\"/destination\",\"path\":[\"routes\",\"destination\"]},\"_p_routes.type\":{\"ret_value\":\"text\",\"caption\":\"routes type\",\"sample_value\":\"auto\",\"path\":[\"routes\",\"type\"]},\"_p_routes.kind\":{\"ret_value\":\"text\",\"caption\":\"routes kind\",\"sample_value\":\"internal\",\"path\":[\"routes\",\"kind\"]},\"_p_error\":{\"ret_value\":\"text\",\"caption\":\"error\",\"sample_value\":null,\"path\":[\"error\"]},\"_p_message\":{\"ret_value\":\"text\",\"caption\":\"message\",\"sample_value\":\"Route updated\",\"path\":[\"message\"]},\"_p_internal\":{\"ret_value\":\"number\",\"caption\":\"internal\",\"sample_value\":439082492,\"path\":[\"internal\"]}}}}",
+            "url": "https://api.coalias.com/domains/[domain]/routes",
+            "url_params": {
+                "AIU": {
+                    "key": "domain",
+                    "private": true,
+                    "value": "sometestdomain.com"
+                }
+            }
+        },
+        "AIY": {
+            "body": "{\n\t\"source\": \"<source>\",\n    \"destination\": \"<destination>\",\n    \"type\": \"<type>\"\n}",
+            "body_params": {
+                "AIa": {
+                    "key": "source",
+                    "private": true,
+                    "value": "/source"
+                },
+                "AIb": {
+                    "key": "destination",
+                    "private": true,
+                    "value": "/destination"
+                },
+                "AIc": {
+                    "key": "type",
+                    "private": true,
+                    "value": "auto"
+                }
+            },
+            "initialized": true,
+            "method": "patch",
+            "name": "Route - Create or Update",
+            "publish_as": "action",
+            "rank": 10,
+            "ret_value": "api.1672761665688x759154902569320400.plugin_api.AIY",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AIY\":{\"caption\":\"Route - Create or Update\",\"fields\":{\"_p_source\":{\"ret_value\":\"text\",\"caption\":\"source\",\"sample_value\":\"/source\",\"path\":[\"source\"]},\"_p_routes.source\":{\"ret_value\":\"text\",\"caption\":\"routes source\",\"sample_value\":\"/source\",\"path\":[\"routes\",\"source\"]},\"_p_routes.destination\":{\"ret_value\":\"text\",\"caption\":\"routes destination\",\"sample_value\":\"/destination\",\"path\":[\"routes\",\"destination\"]},\"_p_routes.type\":{\"ret_value\":\"text\",\"caption\":\"routes type\",\"sample_value\":\"auto\",\"path\":[\"routes\",\"type\"]},\"_p_routes.kind\":{\"ret_value\":\"text\",\"caption\":\"routes kind\",\"sample_value\":\"internal\",\"path\":[\"routes\",\"kind\"]},\"_p_error\":{\"ret_value\":\"text\",\"caption\":\"error\",\"sample_value\":null,\"path\":[\"error\"]},\"_p_message\":{\"ret_value\":\"text\",\"caption\":\"message\",\"sample_value\":\"Route updated\",\"path\":[\"message\"]},\"_p_internal\":{\"ret_value\":\"number\",\"caption\":\"internal\",\"sample_value\":439082492,\"path\":[\"internal\"]}}}}",
+            "url": "https://api.coalias.com/domains/[domain]/routes",
+            "url_params": {
+                "AIZ": {
+                    "key": "domain",
+                    "private": true,
+                    "value": "sometestdomain.com"
+                }
+            }
+        },
+        "AId": {
+            "initialized": true,
+            "method": "delete_method",
+            "name": "Route - Delete",
+            "publish_as": "action",
+            "rank": 11,
+            "ret_value": "api.1672761665688x759154902569320400.plugin_api.AId",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AId\":{\"caption\":\"Route - Delete\",\"fields\":{\"_p_source\":{\"ret_value\":\"text\",\"caption\":\"source\",\"sample_value\":\"/source\",\"path\":[\"source\"]},\"_p_routes\":{\"ret_value\":\"text\",\"caption\":\"routes\",\"sample_value\":null,\"path\":[\"routes\"]},\"_p_error\":{\"ret_value\":\"text\",\"caption\":\"error\",\"sample_value\":null,\"path\":[\"error\"]},\"_p_message\":{\"ret_value\":\"text\",\"caption\":\"message\",\"sample_value\":\"Route deleted\",\"path\":[\"message\"]},\"_p_internal\":{\"ret_value\":\"number\",\"caption\":\"internal\",\"sample_value\":439082492,\"path\":[\"internal\"]}}}}",
+            "url": "https://api.coalias.com/domains/[domain]/routes?source=[source]",
+            "url_params": {
+                "AIe": {
+                    "key": "domain",
+                    "private": true,
+                    "value": "sometestdomain.com"
+                },
+                "AIf": {
+                    "key": "source",
+                    "private": true,
+                    "value": "/source"
+                }
+            }
+        }
+    },
+    "human": "CoAlias"
+}

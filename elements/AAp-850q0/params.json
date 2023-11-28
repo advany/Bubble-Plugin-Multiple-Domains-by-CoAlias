@@ -1,0 +1,240 @@
+{
+    "add_is_visible": true,
+    "can_fit_height": true,
+    "can_fit_width": true,
+    "category": "visual elements",
+    "default_dim": {
+        "height": 25,
+        "width": 25
+    },
+    "display": "CoAlias",
+    "fields": {
+        "AHL": {
+            "caption": "parameter_1",
+            "doc": "An URL like https://client.domain.com/test?search=all with search as the value would result in a parameter of all",
+            "editor": "StaticText",
+            "name": "parameter_1",
+            "optional": true,
+            "rank": 0
+        },
+        "AHM": {
+            "caption": "parameter_2",
+            "doc": "An URL like https://client.domain.com/test?search=all with search as the value would result in a parameter of all",
+            "editor": "StaticText",
+            "name": "parameter_2",
+            "optional": true,
+            "rank": 1
+        },
+        "AHN": {
+            "caption": "parameter_3",
+            "doc": "An URL like https://client.domain.com/test?search=all with search as the value would result in a parameter of all",
+            "editor": "StaticText",
+            "name": "parameter_3",
+            "optional": true,
+            "rank": 2
+        },
+        "AHO": {
+            "caption": "parameter_4",
+            "doc": "An URL like https://client.domain.com/test?search=all with search as the value would result in a parameter of all",
+            "editor": "StaticText",
+            "name": "parameter_4",
+            "optional": true,
+            "rank": 3
+        },
+        "AHP": {
+            "caption": "parameter_5",
+            "doc": "An URL like https://client.domain.com/test?search=all with search as the value would result in a parameter of all",
+            "editor": "StaticText",
+            "name": "parameter_5",
+            "optional": true,
+            "rank": 4
+        }
+    },
+    "icon": "ion-android-globe",
+    "property_applications": {
+        "MinWidth": true,
+        "resizable": true
+    },
+    "states": {
+        "AAq": {
+            "caption": "subdomain",
+            "doc": "An URL like https://client.domain.com/test?search=all would result into a subdomain of client",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "subdomain",
+            "value": "text"
+        },
+        "AAr": {
+            "caption": "hostname",
+            "doc": "An URL like https://client.domain.com/test?search=all would result into a hostname of client.domain.com",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "hostname",
+            "value": "text"
+        },
+        "AAs": {
+            "caption": "url",
+            "doc": "An URL like https://client.domain.com/test?search=all in the url bar would be returned (hostname of top window)",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "url",
+            "value": "text"
+        },
+        "AGu": {
+            "caption": "url (iframe)",
+            "doc": "An URL like https://client.domain.com/test?search=all in the iframe would be returned (hostname of window)",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "url_iframe",
+            "value": "text"
+        },
+        "AGv": {
+            "caption": "pathname",
+            "doc": "An URL like https://client.domain.com/test?search=all in the url bar would result in a pathname of /test (pathname of the top window)",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "pathname",
+            "value": "text"
+        },
+        "AGw": {
+            "caption": "pathname_iframe",
+            "doc": "An URL like https://client.domain.com/test?search=all in the iframe would result in a pathname of /test (pathname of the iframe window)",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "pathname_iframe",
+            "value": "text"
+        },
+        "AGx": {
+            "caption": "search",
+            "doc": "An URL like https://client.domain.com/test?search=all in the url bar would result in a search of ?search=all (search of the top window)",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "search",
+            "value": "text"
+        },
+        "AGy": {
+            "caption": "search_iframe",
+            "doc": "An URL like https://client.domain.com/test?search=all in the iframe would result in a search of ?search=all (search of the iframe window)",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "search_iframe",
+            "value": "text"
+        },
+        "AGz": {
+            "caption": "hash",
+            "doc": "An URL like https://client.domain.com/test#pricing in the url bar would result in a hash of #pricing (hash of the top window)",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "hash",
+            "value": "text"
+        },
+        "AHA": {
+            "caption": "hash_iframe",
+            "doc": "An URL like https://client.domain.com/test#pricing in the iframe would result in a hash of #pricing (hash of the iframe window)",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "hash_iframe",
+            "value": "text"
+        },
+        "AHB": {
+            "caption": "Parameter 1",
+            "doc": "An URL like https://client.domain.com/test?search=all in the url bar would result in a parameter of all (parameter of the top window)",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "parameter_1",
+            "value": "text"
+        },
+        "AHC": {
+            "caption": "parameter_1_iframe",
+            "doc": "An URL like https://client.domain.com/test?search=all in the iframe would result in a parameter of all (parameter of the iframe window)",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "parameter_1_iframe",
+            "value": "text"
+        },
+        "AHD": {
+            "caption": "parameter_2",
+            "doc": "An URL like https://client.domain.com/test?search=all in the url bar would result in a parameter of all (parameter of the top window)",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "parameter_2",
+            "value": "text"
+        },
+        "AHE": {
+            "caption": "parameter_2_iframe",
+            "doc": "An URL like https://client.domain.com/test?search=all in the iframe would result in a parameter of all (parameter of the iframe window)",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "parameter_2_iframe",
+            "value": "text"
+        },
+        "AHF": {
+            "caption": "parameter_3",
+            "doc": "An URL like https://client.domain.com/test?search=all in the url bar would result in a parameter of all (parameter of the top window)",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "parameter_3",
+            "value": "text"
+        },
+        "AHG": {
+            "caption": "parameter_3_iframe",
+            "doc": "An URL like https://client.domain.com/test?search=all in the iframe would result in a parameter of all (parameter of the iframe window)",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "parameter_3_iframe",
+            "value": "text"
+        },
+        "AHH": {
+            "caption": "parameter_4",
+            "doc": "An URL like https://client.domain.com/test?search=all in the url bar would result in a parameter of all (parameter of the top window)",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "parameter_4",
+            "value": "text"
+        },
+        "AHI": {
+            "caption": "parameter_4_iframe",
+            "doc": "An URL like https://client.domain.com/test?search=all in the iframe would result in a parameter of all (parameter of the iframe window)",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "parameter_4_iframe",
+            "value": "text"
+        },
+        "AHJ": {
+            "caption": "parameter_5",
+            "doc": "An URL like https://client.domain.com/test?search=all in the url bar would result in a parameter of all (parameter of the top window)",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "parameter_5",
+            "value": "text"
+        },
+        "AHK": {
+            "caption": "parameter_5_iframe",
+            "doc": "An URL like https://client.domain.com/test?search=all in the iframe would result in a parameter of all (parameter of the iframe window)",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "parameter_5_iframe",
+            "value": "text"
+        }
+    }
+}
