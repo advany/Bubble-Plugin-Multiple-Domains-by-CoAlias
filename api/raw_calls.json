@@ -341,7 +341,35 @@
                     "value": "/source"
                 }
             }
-        }
+        },
+        "AJE": {
+            "initialized": true,
+            "method": "get",
+            "name": "Redirect - GET",
+            "publish_as": "data",
+            "rank": 6,
+            "ret_value": "api.1672761665688x759154902569320400.plugin_api.AJE",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AJE\":{\"caption\":\"Redirect - GET\",\"fields\":{\"_p_redirects.source\":{\"ret_value\":\"text\",\"caption\":\"redirects source\",\"sample_value\":\"/*\",\"path\":[\"redirects\",\"source\"]},\"_p_redirects.destination\":{\"ret_value\":\"text\",\"caption\":\"redirects destination\",\"sample_value\":\"/hoi\",\"path\":[\"redirects\",\"destination\"]},\"_p_redirects.status_code\":{\"ret_value\":\"number\",\"caption\":\"redirects status_code\",\"sample_value\":301,\"path\":[\"redirects\",\"status_code\"]},\"_p_error\":{\"ret_value\":\"text\",\"caption\":\"error\",\"sample_value\":null,\"path\":[\"error\"]},\"_p_message\":{\"ret_value\":\"text\",\"caption\":\"message\",\"sample_value\":\"Redirect fetched\",\"path\":[\"message\"]},\"_p_internal\":{\"ret_value\":\"number\",\"caption\":\"internal\",\"sample_value\":439082492,\"path\":[\"internal\"]}}}}",
+            "url": "https://api.coalias.com/domains/[name]/redirects?source=[source]&modified=[modified]",
+            "url_params": {
+                "AJF": {
+                    "key": "name",
+                    "private": true,
+                    "value": "sometestdomain.com"
+                },
+                "AJG": {
+                    "key": "source",
+                    "private": true,
+                    "value": "/*"
+                },
+                "AJH": {
+                    "key": "modified",
+                    "private": true,
+                    "value": ""
+                }
+            }
+        },
     },
     "human": "CoAlias"
 }
